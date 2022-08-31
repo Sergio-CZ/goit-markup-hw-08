@@ -1,0 +1,48 @@
+.fields {
+  padding-top: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fields__title {
+  margin-bottom: 50px;
+  color: $title-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.fields__container {
+  display: flex;
+  align-items: center;
+}
+.fields__item {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.fields__thumb {
+  position: relative;
+}
+
+.fields__desk {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: $color-white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
