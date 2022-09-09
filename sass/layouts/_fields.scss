@@ -14,7 +14,11 @@
 }
 
 .fields__container {
-  display: flex;
+  display: block;
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+  // display: flex;
   align-items: center;
 }
 .fields__item {

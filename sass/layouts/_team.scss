@@ -1,4 +1,6 @@
 .team {
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin: 0 auto;
   text-align: center;
   background-color: $color-button-grey;
@@ -14,7 +16,10 @@
 }
 
 .team__list {
-  display: flex;
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  // display: flex;
   align-items: center;
   padding: 0;
 }
@@ -23,7 +28,10 @@
   padding: 0;
   margin: 0 auto;
   text-align: center;
-  gap: 30px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .team__item {
@@ -31,6 +39,14 @@
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-portreit {
+  display: block;
+  max-width: 450;
+  width: 100%;
+  max-height: 460px;
+  height: 100%;
 }
 
 .hero-iv-worker {
@@ -56,6 +72,7 @@
 }
 
 .team__social {
+  padding-bottom: 24px;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -74,15 +91,15 @@
   justify-content: center;
   background-color: $color-white;
   border-radius: 50%;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: $color-blue;
   }
 
-  &:hover .soc,
-  &:focus .soc {
+  &:hover .team__soc,
+  &:focus .team__soc {
     fill: $color-white;
   }
 }

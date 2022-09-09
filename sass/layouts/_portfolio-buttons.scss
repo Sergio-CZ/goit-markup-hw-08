@@ -1,9 +1,28 @@
+.portfolio {
+  display: block;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  min-width: 480px;
+  max-width: 480px;
+}
+
+.portfolio-buttons {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
 .portfolio__list {
   display: flex;
-  margin-bottom: 50px;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 30px;
+  row-gap: 15px;
+  column-gap: 8px;
+
+  // justify-content: center;
+  // gap: 8px;
 }
 
 .portfolio__item {
