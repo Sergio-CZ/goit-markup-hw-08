@@ -1,5 +1,6 @@
 footer {
-  margin: 0 auto;
+  max-width: 480px;
+  min-width: 480px;
   text-align: center;
   background-color: $color-footer;
 }
@@ -12,6 +13,8 @@ footer {
 .footer {
   display: block;
   text-align: center;
+  max-width: 480px;
+  min-width: 480px;
 
   // display: flex;
   // align-items: flex-start;
@@ -190,7 +193,8 @@ footer {
   width: 100%;
   height: 50px;
   margin-bottom: 20px;
-  text-align: center;
+
+  // text-align: center;
   padding-left: 16px;
   font-family: "Roboto";
   font-style: normal;

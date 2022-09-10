@@ -16,13 +16,14 @@
 .hero__container {
   display: block;
   align-items: center;
+  max-width: 480px;
+  width: 100%;
 }
 
 .hero--overlay {
   margin: 0 auto;
-
+  max-width: 480px;
   width: 100%;
-
   max-height: 400px;
   background-color: #c4c4c4;
   background-image: linear-gradient(
