@@ -3,6 +3,18 @@ footer {
   min-width: 480px;
   text-align: center;
   background-color: $color-footer;
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1190px;
+    // gap: 30px;
+
+    width: 100%;
+  }
 }
 
 .studio {
@@ -15,11 +27,19 @@ footer {
   text-align: center;
   max-width: 480px;
   min-width: 480px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 768px;
+    // gap: 30px;
 
-  // display: flex;
-  // align-items: flex-start;
-  // justify-content: left;
+    width: 100%;
+  }
 }
+
+// display: flex;
+// align-items: flex-start;
+// justify-content: left;
 
 .footer__text {
   display: block;
@@ -41,6 +61,12 @@ footer {
   font-size: 26px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 768px) {
+    padding-left: 39px;
+    max-width: 1190px;
+    // gap: 30px;
+    width: 100%;
+  }
 }
 
 .footer__container {
@@ -48,18 +74,56 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
   max-width: 480px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 165px;
+    padding-left: 61px;
+    max-width: 272px;
+
+    // gap: 30px;
+    width: 100%;
+  }
+}
+
+.footer__address {
+  display: block;
+  max-width: 480px;
+  width: 100%;
+  text-align: left;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+
+    // text-align: left;
+    // gap: 30px;
+    // width: 100%;
+  }
 }
 
 .footer__item {
   display: block;
   width: 100%;
-  max-width: 480;
+  max-width: 480px;
   text-align: center;
 
   &:not(:last-child) {
     margin-bottom: 9px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+    width: 100%;
+    text-align: left;
+    // gap: 30px;
+    // width: 100%;
   }
 }
 
@@ -76,6 +140,13 @@ footer {
   &:focus {
     color: $color-blue;
   }
+  @media screen and (min-width: 768px) {
+    max-width: 232px;
+    width: 100%;
+    text-align: left;
+    // gap: 30px;
+    // width: 100%;
+  }
 }
 
 .footer__connect {
@@ -83,8 +154,17 @@ footer {
   flex-direction: column;
   width: 100%;
   max-width: 480px;
-
   padding-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 5px;
+    max-width: 206px;
+    // gap: 30px;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+  }
+
   /* padding-bottom: 100px; */
   // margin-left: 93px;
 }
@@ -102,6 +182,12 @@ footer {
   &:hover,
   &:focus {
     color: $color-blue;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 232px;
+    // gap: 30px;
+    width: 100%;
   }
 }
 
@@ -146,9 +232,15 @@ footer {
 
 .footer__field {
   display: block;
-  justify-content: start;
+  justify-content: flex-start;
   width: 100%;
   max-width: 480px;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    width: 100%;
+    justify-content: flex-start;
+    // align-items: center;
+  }
 
   // padding-left: 93px;
   // width: 570px;
@@ -177,15 +269,33 @@ footer {
   font-size: 14px;
   line-height: 1.17;
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-left: 288px;
+    text-align: left;
+    // margin-right: 273px;
+    // align-items: center;
+  }
 }
 .footer__buttons {
   display: block;
+  text-align: center;
 
   // display: flex;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
   max-width: 480px;
   width: 100%;
+  @media screen and (min-width: 768px) {
+    // display: flex;
+    // flex-direction: column;
+    max-width: 768px;
+    width: 100%;
+    padding-top: 0;
+
+    // justify-content: center;
+    // align-items: center;
+  }
 }
 
 .footer__input {
@@ -210,6 +320,18 @@ footer {
   &:focus {
     color: rgba(255, 255, 255, 0.6);
     outline-style: none;
+  }
+  @media screen and (min-width: 768px) {
+    // display: flex;
+    // flex-direction: column;
+    display: block;
+    text-align: left;
+    margin-left: 151px;
+    // margin-right: 152px;
+    // align-items: center;
+    // justify-content: center;
+    max-width: 450px;
+    width: 100%;
   }
 }
 .footer__btn {
@@ -239,6 +361,10 @@ footer {
   &:focus {
     background-color: $color-button-blue;
     outline-style: none;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 50px;
+    text-align: left;
   }
 }
 .footer__plane {

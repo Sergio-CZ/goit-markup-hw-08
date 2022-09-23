@@ -6,6 +6,11 @@
   display: block;
   max-width: 480px;
   width: 100%;
+  @media screen and (min-width: 768px) {
+    max-width: 1190px;
+    width: 100%;
+    text-align: center;
+  }
 }
 .clients__title {
   text-align: center;
@@ -60,4 +65,11 @@
   width: 100%;
   min-width: 210px;
   max-width: 210px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    // gap: 30px;
+    max-width: calc((100% - 6 * 15px) / 3);
+    width: 100%;
+  }
 }

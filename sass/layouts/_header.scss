@@ -1,6 +1,10 @@
 .line-border {
   border-bottom: 1px solid #ececec;
   margin: 0 auto;
+  width: 100%;
+  // @media screen and (min-width: 768px) {
+  //   max-width: 1199px;
+  // }
 }
 .header {
   position: relative;
@@ -15,6 +19,7 @@
 
   @media screen and (min-width: 768px) {
     max-width: 1199px;
+    margin-bottom: 60px;
   }
 }
 
@@ -22,6 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .header .nav {
@@ -234,7 +240,7 @@
     position: relative;
     padding: 25px 0;
     font-size: 14px;
-    line-height: 1.17;
+    line-height: 1.1429;
   }
 }
 
@@ -272,6 +278,14 @@
   &:active {
     color: $color-blue;
   }
+  @media screen and (min-width: 768px) {
+    position: relative;
+    padding: 25px 0;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1429;
+  }
 }
 
 // .header--current::after {
@@ -304,7 +318,7 @@
   @media screen and (min-width: 768px) {
     padding: 25px 0;
     font-size: 14px;
-    line-height: 1.17;
+    line-height: 1.1429;
   }
   &:active {
     color: $color-blue;
@@ -325,6 +339,11 @@
   &:hover,
   &:focus {
     color: $color-blue;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 25px 0;
+    font-size: 14px;
+    line-height: 1.1429;
   }
 }
 
