@@ -556,7 +556,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .portfolio {
-    max-width: 767px;
+    max-width: 480px;
     margin: 0 auto;
   }
 }
@@ -565,7 +565,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     padding-top: 0px;
-    max-width: 1199px;
+    max-width: 768px;
     margin: 0 auto;
   }
 }
@@ -574,7 +574,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     padding-top: 0px;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -676,7 +676,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    max-width: 1199px;
+    max-width: 768px;
     width: 100%;
   }
 }
@@ -685,7 +685,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    max-width: 1400px;
+    max-width: 1200px;
     width: 100%;
   }
 }
@@ -792,6 +792,13 @@ img {
     width: 100%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .port__border {
+    display: block;
+    max-width: 370px;
+    width: 100%;
+  }
+}
 
 .port__title {
   /* padding-top: 20px; */
@@ -834,12 +841,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .header {
-    max-width: 768px;
+    max-width: 1199px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header {
-    max-width: 1200px;
+    max-width: 1400px;
   }
 }
 
@@ -858,12 +865,12 @@ img {
 }
 @media screen and (max-width: 767px) {
   .header .nav {
-    max-width: 480px;
+    max-width: 767px;
   }
 }
 @media screen and (min-width: 768px) {
   .header .nav {
-    max-width: 768px;
+    max-width: 1199px;
     z-index: 0;
   }
 }
@@ -895,6 +902,7 @@ img {
   .header__logo {
     max-width: 1200px;
     margin-right: 92px;
+    padding-left: 15px;
     z-index: 0;
   }
 }
@@ -994,13 +1002,17 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    max-width: 768px;
     padding-top: 0;
-    margin-right: 90px;
+    margin-right: 87px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__list {
+    display: flex;
+    flex-direction: row;
     margin-right: 315px;
+    max-width: 768px;
   }
 }
 
@@ -1050,6 +1062,7 @@ img {
     align-items: center;
     justify-content: center;
     padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
