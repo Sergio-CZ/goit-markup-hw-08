@@ -151,13 +151,12 @@ img {
 
 .hero {
   padding-top: 0;
-  max-height: 400px;
-  max-width: 480px;
-  width: 100%;
-  height: 100%;
+  padding-bottom: 0;
   text-align: center;
   background-color: #2f303a;
   margin: 0 auto;
+  max-width: 1600px;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .hero {
@@ -167,12 +166,13 @@ img {
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    width: 100%;
+    margin-bottom: 60px;
   }
 }
 
@@ -180,6 +180,7 @@ img {
   display: block;
   text-align: center;
   margin: 0 auto;
+  max-width: 480px;
   width: 100%;
 }
 @media screen and (max-width: 767px) {
@@ -209,18 +210,20 @@ img {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img14.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) {
   .hero--overlay {
+    margin-left: 0;
+    margin-right: auto;
     max-width: 768px;
     width: 100%;
-    height: 600px;
     margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero--overlay {
+    margin-left: 0;
+    margin-right: auto;
     max-width: 1600px;
     width: 100%;
     height: 600px;
@@ -277,32 +280,13 @@ img {
   }
 }
 
+/* width: 1600px; */
 .rules {
   display: block;
   text-align: center;
-  padding-bottom: 60px;
   padding-top: 60px;
   margin: 0 auto;
   /* width: 1600px; */
-}
-@media screen and (max-width: 767px) {
-  .rules {
-    min-width: 450px;
-    max-width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .rules {
-    min-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .rules {
-    min-width: 1200px;
-    max-width: 1600px;
-    width: 100%;
-    margin: 0 auto;
-  }
 }
 
 .rules__list {
@@ -332,7 +316,7 @@ img {
 @media screen and (min-width: 1200px) {
   .rules__list {
     display: flex;
-    flex-direction: row;
+    padding-top: 94px;
     max-width: 1200px;
     margin: 0 auto;
   }
