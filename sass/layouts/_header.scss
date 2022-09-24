@@ -1,8 +1,10 @@
 .line-border {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #493535;
   margin: 0 auto;
   width: 100%;
-  // @media screen and (min-width: 768px) {
+
+  // @media screen and (max-width: 767px) {
+  //   display: none;
   //   max-width: 1199px;
   // }
 }
@@ -18,7 +20,10 @@
   min-width: 480px;
 
   @media screen and (min-width: 768px) {
-    max-width: 1199px;
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
   }
 }
 
@@ -41,6 +46,11 @@
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
+    z-index: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    z-index: 0;
   }
 }
 
@@ -59,6 +69,11 @@
 
   @media screen and (min-width: 768px) {
     margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    margin-right: 92px;
+    z-index: 0;
   }
 }
 
@@ -174,6 +189,10 @@
     margin-right: 90px;
     // margin-right: 305px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 315px;
+    // margin-right: 305px;
+  }
 }
 
 .header__item {
@@ -211,6 +230,13 @@
     padding-top: 21px;
     padding-bottom: 21px;
     justify-content: left;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
   }
 }
 
@@ -252,6 +278,17 @@
     height: 4px;
     width: 100%;
     bottom: -8px;
+    background-color: $color-blue;
+    border-radius: 2px;
+  }
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    left: 0;
+    display: block;
+    content: "";
+    height: 4px;
+    width: 100%;
+    bottom: 0px;
     background-color: $color-blue;
     border-radius: 2px;
   }
@@ -394,6 +431,15 @@
       margin-bottom: 10px;
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 32px;
+  }
+  &:not(:last-child) {
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+    }
+  }
 }
 
 // .header-contact-link {
@@ -432,6 +478,12 @@
     color: $text-color;
     font-size: 12px;
     line-height: 1.167;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 }
 .header__contact-tel {
@@ -475,6 +527,9 @@
   @media screen and (min-width: 768px) {
     margin-right: 8px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
 }
 
 .header__tel {
@@ -487,6 +542,9 @@
   }
   @media screen and (min-width: 768px) {
     margin-right: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
   }
 }
 
