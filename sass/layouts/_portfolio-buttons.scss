@@ -12,6 +12,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+
     padding-top: 0px;
     max-width: 768px;
     margin: 0 auto;
@@ -45,8 +46,9 @@
     padding-top: 60px;
     align-items: center;
     justify-content: center;
-    max-width: 768px;
+    max-width: 574px;
     margin: 0 auto 30px;
+    column-gap: 0px;
   }
 
   // justify-content: center;
