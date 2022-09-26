@@ -18,10 +18,9 @@
 
 <body>
   <!--Шапка  сторінки-->
-  <header class="line-border">
+  <header>
     <div class="header">
-      <!-- <div class="container header"> -->
-      <nav class="nav">
+      <nav class="nav line-border">
         <a class="header__logo" href="index.html" title="Наш Логотип"><span class="header__web">Web</span>Studio</a>
 
         <button class="menu-button is-open" type="button" aria-expanded="false" data-menu-button>
@@ -85,67 +84,13 @@
   <main>
     <section class="section hero">
       <div class="hero__container hero--overlay">
+        <!-- <img class="hero__bg-image" src="./images/img14.jpeg"alt=" background image"> -->
         <h1 class="hero__text">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
-
-
-    <!-- <  /   section         -->
-
-    <!-- <header class="line-border">
-  <div class="container header">
-    <a class="header__logo" href="index.html" title="Наш Логотип"><span class="header__web">Web</span>Studio</a>
-
-
-    <ul class="header__list">
-      <li class="header__item">
-        <a class="header__link header--current" href="./index.html" title="Наша Студія">Студія</a>
-      </li>
-      <li class="header__item">
-        <a class="header__site" href="./portfolio.html" title="Наші проекти">Портфоліо</a>
-      </li>
-      <li class="header__item">
-        <a class="header__site" href="./index.html" title="Наші контакти">Контакти</a>
-      </li>
-    </ul>
-    <ul class="header__list header--contact">
-      <li class="header__data">
-        <a class="header__contact" href="mailto:info@devstudio.com">
-          <svg class="header__email" width="16" height="12">
-            <use href="./images/symbol-defs.svg#icon-envelope-hover-1"></use>
-          </svg>
-          info@devstudio.com
-        </a>
-      </li>
-      <li class="header__data">
-        <a class="header__contact" href="tel:+380961111111">
-          <svg class="header__tel" width="10" height="16">
-            <use href="./images/symbol-defs.svg#icon-smartphone1-1"></use>
-          </svg>+38 096 111 11 11</a>
-      </li>
-    </ul>
-  </div>
-  </section>
-</header>
-<main>
-  <section class="section hero">
-    <div class="hero__container hero--overlay">
-      <h1 class="hero__text">Ефективні рішення для вашого бізнесу</h1>
-      <button type="button" class="button" data-modal-open>
-        Замовити послугу
-      </button>
-    </div>
-  </section> -->
-
-    <!-- Section I I -->
-    <!-- Заголовок, якого не буде видно -->
-
-
     <section class="section rules">
-
       <h2 class="hero-rules visually-hidden">Правила нашої роботи</h2>
-
       <ul class="rules__list">
         <li class="rules__item">
           <svg class="rules__equipment">
@@ -189,35 +134,29 @@
         </li>
       </ul>
     </section>
-
-    <!-- Section I I I -->
-
-    <!-- <section class="section fields">
-        <h2 class="fields__title">Чим ми займаємось</h2>
-        <ul class="container fields__container">
-          <li class="fields__item">
-            <div class="fields__thumb">
-              <img src="./images/box1.jpg" alt="Работа на планшеті" width="370" />
-              <p class="fields__desk">Десктопні додатки</p>
-            </div>
-          </li>
-          <li class="fields__item">
-            <div class="fields__thumb">
-              <img src="./images/box2.jpg" alt="Перенесення даних з телефона на ноутбук" width="370" />
-              <p class="fields__desk">Мобільні додатки</p>
-            </div>
-          </li>
-          <li class="fields__item">
-            <div class="fields__thumb">
-              <img src="./images/box3.jpg" alt="Вибір кольору на планшеті" width="370" />
-              <p class="fields__desk">Дизайнерські рішення</p>
-            </div>
-          </li>
-        </ul>
-      </section> -->
-
-    <!-- Section IV -->
-
+    <section class="section fields">
+      <h2 class="fields__title">Чим ми займаємось</h2>
+      <ul class="container fields__container">
+        <li class="fields__item">
+          <div class="fields__thumb">
+            <img src="./images/box1.jpg" alt="Работа на планшеті" width="370" />
+            <p class="fields__desk">Десктопні додатки</p>
+          </div>
+        </li>
+        <li class="fields__item">
+          <div class="fields__thumb">
+            <img src="./images/box2.jpg" alt="Перенесення даних з телефона на ноутбук" width="370" />
+            <p class="fields__desk">Мобільні додатки</p>
+          </div>
+        </li>
+        <li class="fields__item">
+          <div class="fields__thumb">
+            <img src="./images/box3.jpg" alt="Вибір кольору на планшеті" width="370" />
+            <p class="fields__desk">Дизайнерські рішення</p>
+          </div>
+        </li>
+      </ul>
+    </section>
     <section class="section team">
       <h2 class="team__title">Наша команда</h2>
       <ul class="container team__list">
@@ -386,7 +325,6 @@
       </ul>
     </section>
     <section class="section clients-line">
-
       <div class="container clients">
         <h2 class="clients__title">Постійні клієнти</h2>
         <ul class="clients__list">
@@ -435,9 +373,6 @@
         </ul>
       </div>
     </section>
-
-
-
     <footer class="studio">
       <div class="container footer">
         <div class="footer__container">
@@ -504,8 +439,6 @@
         <!-- </div> -->
       </div>
     </footer>
-
-
     <div class="backdrop is-hidden" data-modal>
       <div class="backdrop__modal">
         <div class="backdrop__xcon">
@@ -516,7 +449,6 @@
           </button>
         </div>
         <div class="backdrop__window">
-
           <form class="backdrop__form">
             <p class="backdrop__title">Залиште свої дані, ми вам передзвонимо</p>
             <div class="backdrop__field">
