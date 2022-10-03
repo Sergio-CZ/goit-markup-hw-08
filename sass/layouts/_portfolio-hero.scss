@@ -57,8 +57,6 @@
 }
 
 .port__item {
-  // margin-right: 30px;
-
   max-width: 450px;
   width: 100%;
   text-align: left;
@@ -68,15 +66,13 @@
   &:not(:last-child) {
     margin-bottom: 30px;
   }
-  &:hover,
-  &:focus {
+  &:hover {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  &:hover .port__movement,
-  &:focus .port__movement {
+  &:hover .port__movement {
     transform: translateY(0);
   }
 
@@ -104,13 +100,10 @@
   }
 }
 
-// .hero-ii-port-item:nth-child(3n) {
-//   margin-right: 0;
-// }
-
-// .hero-ii-port-item:nth-last-child(-n + 3) {
-//   margin-bottom: 0;
-// }
+.port__link:hover .port__movement,
+.port__link:focus .port__movement {
+  transform: translateY(0);
+}
 
 .port__topic {
   position: relative;
@@ -155,10 +148,6 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// .thumb {
-//   position: relative;
-// }
-
 .port__border {
   padding-top: 20px;
   padding-left: 24px;
@@ -177,15 +166,6 @@
     width: 100%;
   }
 }
-
-// .hero-ii-border {
-//   padding-top: 20px;
-//   padding-left: 24px;
-//   padding-bottom: 20px;
-//   border-left: 1px solid #eeeeee;
-//   border-bottom: 1px solid #eeeeee;
-//   border-right: 1px solid #eeeeee;
-// }
 
 .port__title {
   /* padding-top: 20px; */

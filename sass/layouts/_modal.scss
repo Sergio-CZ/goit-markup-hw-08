@@ -66,10 +66,10 @@
 }
 
 .backdrop__close {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   right: 8px;
   top: 7px;
   width: 30px;
@@ -77,7 +77,6 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
-
   cursor: pointer;
 }
 
@@ -168,8 +167,8 @@
   &:hover + .backdrop__icon,
   &:focus + .backdrop__icon {
     fill: $color-blue;
+    border-color: $color-blue;
   }
-  /* border-color: rgba(117, 117, 117, 0.5);; */
 }
 
 .backdrop__comment {
@@ -188,12 +187,17 @@
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   cursor: pointer;
+
   &:hover {
     border-color: $color-blue;
   }
   &:focus {
     border-color: $color-blue;
     outline-style: none;
+  }
+  &:hover + .backdrop__input,
+  &:focus + .backdrop__input {
+    border-color: $color-blue;
   }
 }
 
@@ -206,6 +210,11 @@
   &:hover,
   &:focus {
     fill: $color-blue;
+  }
+  &:hover + .backdrop__input,
+  &:focus + .backdrop__input {
+    fill: $color-blue;
+    border-color: $color-blue;
   }
 }
 
