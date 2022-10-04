@@ -15,9 +15,10 @@
 .fields__title {
   margin-bottom: 50px;
   color: $title-color;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(36px, 700, 42px, 0.03em);
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.17;
   text-align: center;
 }
 
@@ -49,8 +50,9 @@
   justify-content: center;
   background-color: rgba(47, 48, 58, 0.8);
   color: $color-white;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.17;
+  @include font(14px, 700, 16px, 0.03em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.17;
   text-transform: uppercase;
 }

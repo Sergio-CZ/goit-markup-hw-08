@@ -100,9 +100,10 @@
   text-align: center;
   margin-bottom: 30px;
   color: $title-color;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.1786;
+  @include font(28px, 700, 33px, 0.03em);
+  // font-weight: 700;
+  // font-size: 28px;
+  // line-height: 1.1786;
 }
 
 .clients__logo {

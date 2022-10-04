@@ -14,3 +14,15 @@
 //     @content;
 //   }
 // }
+
+@mixin font($fs: 18px, $fw: 500, $lh: 24px, $ls: 0.03em) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh / $fs;
+  letter-spacing: $ls;
+}
+
+//   @media screen and (min-width: 480px) {
+//     @content;
+//   }
+// }
