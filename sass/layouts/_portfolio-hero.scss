@@ -169,8 +169,6 @@
 }
 
 .port__title {
-  /* padding-top: 20px; */
-  /* padding-left: 24px; */
   margin-bottom: 4px;
   color: var(--title-color);
   font-family: Roboto;
@@ -183,8 +181,6 @@
 }
 
 .port__text {
-  /* padding-bottom: 20px;
-  padding-left: 24px; */
   @include font(16px, 400, 30px, 0.03em);
   // font-weight: 400;
   // font-size: 16px;

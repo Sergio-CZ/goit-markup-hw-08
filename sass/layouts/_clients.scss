@@ -62,9 +62,6 @@
 
 .clients__item {
   display: flex;
-  // padding-left: 15px;
-  // padding-right: 15px;
-
   min-width: 210px;
   max-width: 210px;
   width: 100%;
@@ -78,7 +75,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    // gap: 30px;
     min-width: 226px;
     max-width: 226px;
     width: 100%;
@@ -89,8 +85,6 @@
 
     min-width: 170px;
     max-width: 170px;
-    // // gap: 30px;
-    // max-width: calc((100% - 12 * 15px) / 6);
     width: 100%;
   }
 }
@@ -134,7 +128,6 @@
     max-width: 170px;
     height: auto;
     width: 100%;
-    // gap: 30px;
     margin: 0 auto;
   }
 }
