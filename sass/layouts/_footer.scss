@@ -4,13 +4,13 @@ footer {
   text-align: center;
   background-color: $color-footer;
   @media screen and (max-width: 767px) {
-    max-width: 480px;
+    max-width: 767px;
     margin: 0 auto;
   }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1190px;
+    max-width: 1200px;
     margin: 0 auto;
     width: 100%;
   }
