@@ -288,8 +288,8 @@ img {
 .hero--overlay {
   min-height: 400px;
   max-height: 400px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero img 1x opt.jpeg");
-  background-size: cover;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mob 1x opt.jpeg");
+  background-size: 100% 118%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -297,8 +297,8 @@ img {
   .hero--overlay {
     min-height: 400px;
     max-height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero img@2x opt.jpeg");
-    background-size: 100% 145%;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet 1x img opt.jpeg");
+    background-size: 100% 113%;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -307,33 +307,41 @@ img {
   .hero--overlay {
     min-height: 600px;
     max-height: 600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero img@3x opt.jpeg");
-    background-size: 100% 148%;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desc 1x opt.jpeg");
+    background-size: 100% 103%;
     background-position: center;
     background-repeat: no-repeat;
   }
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero--overlay {
     min-height: 400px;
     max-height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero img@2x opt.jpeg");
-    background-size: cover;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mob img@2x opt.jpeg");
+    background-size: 100% 118%;
     background-position: center;
     background-repeat: no-repeat;
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero--overlay {
-    background-size: 100% 145%;
+    min-height: 400px;
+    max-height: 400px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet img@2x opt.jpeg");
+    background-size: 100% 118%;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero--overlay {
     min-height: 600px;
     max-height: 600px;
-    background-size: 100% 148%;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desc img@2x opt.jpeg");
+    background-size: 100% 103%;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 .hero__text {
