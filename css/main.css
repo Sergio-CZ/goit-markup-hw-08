@@ -647,35 +647,38 @@ img {
 @media (min-width: 768px) {
   .team {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    max-width: 768px;
+    max-width: 1200px;
     width: 100%;
   }
 }
 @media (min-width: 1200px) {
   .team {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding-top: 94px;
     padding-bottom: 94px;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 30000px;
     width: 100%;
   }
 }
 
 .team__title {
-  margin-bottom: 30px;
+  display: block;
+  text-align: center;
+  margin: 0 auto 30px;
   color: #212121;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
 }
 
 .team__list {
@@ -1726,7 +1729,7 @@ footer {
   footer {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1600px;
+    max-width: 16000px;
     margin: 0 auto;
     width: 100%;
   }

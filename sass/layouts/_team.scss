@@ -12,34 +12,37 @@
   background-color: $color-button-grey;
   @media (min-width: 768px) {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    max-width: 768px;
+    max-width: 1200px;
     width: 100%;
     // gap: 30px;
   }
   @media (min-width: 1200px) {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding-top: 94px;
     padding-bottom: 94px;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 30000px;
     width: 100%;
     // gap: 30px;
   }
 }
 .team__title {
-  margin-bottom: 30px;
+  display: block;
+  text-align: center;
+  margin: 0 auto 30px;
   color: $title-color;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
 }
 
 .team__list {
